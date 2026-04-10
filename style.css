@@ -1,0 +1,42 @@
+/* Custom Utility Library 
+   Author: Diana Camila
+   Focus: Flexbox & Layout optimization
+*/
+
+:root {
+    --primary-dark: #1a1a1a;
+    --accent-color: #6200ee;
+    --text-light: #f5f5f5;
+}
+
+/* Flexbox Helpers */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+/* Modern Card Layout */
+.card-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .mobile-stack {
+        flex-direction: column;
+    }
+}
