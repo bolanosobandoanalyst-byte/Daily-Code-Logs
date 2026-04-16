@@ -1,0 +1,39 @@
+/* Custom Dark Glassmorphism UI 
+   Inspirado en interfaces de alta gama para dashboards
+*/
+
+:root {
+    --bg-dark: #0a0a0a;
+    --goth-purple: #2d004d;
+    --accent-glow: #7b2cbf;
+    --text-silver: #c0c0c0;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    color: var(--text-silver);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-glow);
+    box-shadow: 0 0 20px var(--goth-purple);
+}
+
+.cyber-button {
+    background: linear-gradient(45deg, var(--goth-purple), #000);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
