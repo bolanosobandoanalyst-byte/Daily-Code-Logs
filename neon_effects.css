@@ -1,0 +1,28 @@
+/* Custom Neon Animation for UI Elements
+   Ideal para botones o estados de carga 'Goth-Tech'
+*/
+
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 5px #6200ee, 0 0 10px #6200ee; }
+    50% { box-shadow: 0 0 20px #bc13fe, 0 0 30px #bc13fe; }
+    100% { box-shadow: 0 0 5px #6200ee, 0 0 10px #6200ee; }
+}
+
+.neon-status-active {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse-glow 2s infinite ease-in-out;
+    border: 1px solid #bc13fe;
+}
+
+.dark-panel {
+    background: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+}
