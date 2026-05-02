@@ -1,0 +1,30 @@
+/* Estilos para botones estilo Cyberpunk / Goth-Tech
+   Efecto de transición suave y bordes biselados
+*/
+
+.cyber-btn {
+    position: relative;
+    background: #0d0d0d;
+    color: #c0c0c0;
+    border: 1px solid #bc13fe;
+    padding: 12px 28px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(188, 19, 254, 0.2);
+}
+
+.cyber-btn:hover {
+    background: linear-gradient(135deg, #2d004d, #000000);
+    color: #ffffff;
+    border-color: #7b2cbf;
+    box-shadow: 0 0 20px rgba(188, 19, 254, 0.6);
+    transform: translateY(-2px);
+}
+
+.cyber-btn:active {
+    transform: translateY(1px);
+}
