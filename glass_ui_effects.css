@@ -1,0 +1,38 @@
+/* Glassmorphism Effect con animación de borde
+   Ideal para paneles de control o perfiles VTuber
+*/
+
+.glass-panel {
+    background: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    color: #f0f0f0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Animación de resplandor sutil en la esquina */
+.glass-panel::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(188, 19, 254, 0.15) 0%, transparent 70%);
+    animation: rotate-glow 6s linear infinite;
+}
+
+@keyframes rotate-glow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+}
